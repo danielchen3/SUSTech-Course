@@ -1,0 +1,30 @@
+数字逻辑 Tips：
+
+Lecture 7:
+SR,S'R'内部构造，用什么逻辑门，SR的00是储存
+D Latch 实际上就是保证SR的两个输入相反
+D FF 用两个Latch构造，前一个neg,后一个pos,相当于就是储存滞留一下数据
+T，JK (JQ'+K'Q)FF 注意一下Characteristic Table and Excitation Table
+
+Lecture 8:
+Logic design
+First(A,B,X写开) form and second form 画状态转移图
+两种自动机，Moore是状态伴随输出，Mealy是都相关，有一个输入才会对应一个输出
+状态简化，注意全部一样才能删除
+识别序列，用两种自动机实现注意这个是Detecting!
+
+Lecture 9:
+四种输入输出方式
+序列生成器，注意是N<=2^n-1，然后注意不要用重复的行，否则要增加一个Q（属于SISO型）
+异步counter,相当于别人变化是我的时钟信号，count up是下降沿触发
+BCD Counter 了解
+同步计数器的设计 注意Undesired的状态，需要检验，然后给他赋值新的next state,一般不能直接X
+
+Lecture 10:
+Half/full adder
+Ripple-carry adder/Carry lookahead(Gi = aibi&& Pi = aixorbi(ai+bi))
+Lookahead输出的是Carry，所以最后你要把他和aixorbi再xor才是最后的output
+Carry 和 Overflow（针对signed)(最后两个进位不一样就是溢出)
+十进制加法器 C = 1时 Z就要加0110 说明是大于等于10的数
+二进制乘法器
+上面两个都是二进制加法改造而来

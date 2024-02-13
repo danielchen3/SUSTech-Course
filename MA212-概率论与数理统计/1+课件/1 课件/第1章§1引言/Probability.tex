@@ -1,0 +1,375 @@
+
+\documentclass[mathserif,compress,cjk]{beamer}
+
+\mode<presentation>
+{
+\usetheme{boxes}
+%AnnArbor Antibes Bergen Berkeley Berlin Boadilla boxes CambridgeUS Copenhagen Darmstadt default Dresden Frankfurt Goettingen Hannover Ilmenau JuanLes PinsLuebeck %Madrid Malmoe Marburg Montpellier PaloAlto Pittsburgh Rochester Singapore Szeged Warsaw
+
+%\usetheme{Berlin} %%有层次感%%
+%%\usetheme{boxes} %%很直白%%
+%%\usetheme{Copenhagen} %%有层次感%%
+%%\usetheme{Hannover} %%有层次感%%
+%%\usetheme{PaloAlto} %%有层次感%%
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+}
+
+\usepackage{CJK}
+\usepackage{hyperref}
+\hypersetup{CJKbookmarks=true}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{latexsym}
+\usepackage{color,xcolor}
+\usepackage{graphicx}
+\usepackage{manfnt}
+\usepackage{indentfirst}
+\usepackage[english]{babel}
+
+\hypersetup{pdfpagemode={FullScreen}}
+
+\raggedright
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\5n{\negthinspace \negthinspace \negthinspace \negthinspace \negthinspace }
+\def\4n{\negthinspace \negthinspace \negthinspace \negthinspace }
+\def\3n{\negthinspace \negthinspace \negthinspace }
+\def\2n{\negthinspace \negthinspace }
+\def\1n{\negthinspace }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\dbA{\mathbb{A}} \def\sA{\mathscr{A}} \def\fA{\mathfrak{A}} \def\cA{{\cal A}} \def\BA{{\bf A}} \def\Ba{{\bf a}}
+\def\dbB{\mathbb{B}} \def\sB{\mathscr{B}} \def\fB{\mathfrak{B}} \def\cB{{\cal B}} \def\BB{{\bf B}} \def\Bb{{\bf b}}
+\def\dbC{\mathbb{C}} \def\sC{\mathscr{C}} \def\fC{\mathfrak{C}} \def\cC{{\cal C}} \def\BC{{\bf C}} \def\Bc{{\bf c}}
+\def\dbD{\mathbb{D}} \def\sD{\mathscr{D}} \def\fD{\mathfrak{D}} \def\cD{{\cal D}} \def\BD{{\bf D}} \def\Bd{{\bf d}}
+\def\dbE{\mathbb{E}} \def\sE{\mathscr{E}} \def\fE{\mathfrak{E}} \def\cE{{\cal E}} \def\BE{{\bf E}} \def\Be{{\bf e}}
+\def\dbF{\mathbb{F}} \def\sF{\mathscr{F}} \def\fF{\mathfrak{F}} \def\cF{{\cal F}} \def\BF{{\bf F}} \def\Bf{{\bf f}}
+\def\dbG{\mathbb{G}} \def\sG{\mathscr{G}} \def\fG{\mathfrak{G}} \def\cG{{\cal G}} \def\BG{{\bf G}} \def\Bg{{\bf g}}
+\def\dbH{\mathbb{H}} \def\sH{\mathscr{H}} \def\fH{\mathfrak{H}} \def\cH{{\cal H}} \def\BH{{\bf H}} \def\Bh{{\bf h}}
+\def\dbI{\mathbb{I}} \def\sI{\mathscr{I}} \def\fI{\mathfrak{I}} \def\cI{{\cal I}} \def\BI{{\bf I}} \def\Bi{{\bf i}}
+\def\dbJ{\mathbb{J}} \def\sJ{\mathscr{J}} \def\fJ{\mathfrak{J}} \def\cJ{{\cal J}} \def\BJ{{\bf J}} \def\Bj{{\bf j}}
+\def\dbK{\mathbb{K}} \def\sK{\mathscr{K}} \def\fK{\mathfrak{K}} \def\cK{{\cal K}} \def\BK{{\bf K}} \def\Bk{{\bf k}}
+\def\dbL{\mathbb{L}} \def\sL{\mathscr{L}} \def\fL{\mathfrak{L}} \def\cL{{\cal L}} \def\BL{{\bf L}} \def\Bl{{\bf l}}
+\def\dbM{\mathbb{M}} \def\sM{\mathscr{M}} \def\fM{\mathfrak{M}} \def\cM{{\cal M}} \def\BM{{\bf M}} \def\Bm{{\bf m}}
+\def\dbN{\mathbb{N}} \def\sN{\mathscr{N}} \def\fN{\mathfrak{N}} \def\cN{{\cal N}} \def\BN{{\bf N}} \def\Bn{{\bf n}}
+\def\dbO{\mathbb{O}} \def\sO{\mathscr{O}} \def\fO{\mathfrak{O}} \def\cO{{\cal O}} \def\BO{{\bf O}} \def\Bo{{\bf o}}
+\def\dbP{\mathbb{P}} \def\sP{\mathscr{P}} \def\fP{\mathfrak{P}} \def\cP{{\cal P}} \def\BP{{\bf P}} \def\Bp{{\bf p}}
+\def\dbQ{\mathbb{Q}} \def\sQ{\mathscr{Q}} \def\fQ{\mathfrak{Q}} \def\cQ{{\cal Q}} \def\BQ{{\bf Q}} \def\Bq{{\bf q}}
+\def\dbR{\mathbb{R}} \def\sR{\mathscr{R}} \def\fR{\mathfrak{R}} \def\cR{{\cal R}} \def\BR{{\bf R}} \def\Br{{\bf r}}
+\def\dbS{\mathbb{S}} \def\sS{\mathscr{S}} \def\fS{\mathfrak{S}} \def\cS{{\cal S}} \def\BS{{\bf S}} \def\Bs{{\bf s}}
+\def\dbT{\mathbb{T}} \def\sT{\mathscr{T}} \def\fT{\mathfrak{T}} \def\cT{{\cal T}} \def\BT{{\bf T}} \def\Bt{{\bf t}}
+\def\dbU{\mathbb{U}} \def\sU{\mathscr{U}} \def\fU{\mathfrak{U}} \def\cU{{\cal U}} \def\BU{{\bf U}} \def\Bu{{\bf u}}
+\def\dbV{\mathbb{V}} \def\sV{\mathscr{V}} \def\fV{\mathfrak{V}} \def\cV{{\cal V}} \def\BV{{\bf V}} \def\Bv{{\bf v}}
+\def\dbW{\mathbb{W}} \def\sW{\mathscr{W}} \def\fW{\mathfrak{W}} \def\cW{{\cal W}} \def\BW{{\bf W}} \def\Bw{{\bf w}}
+\def\dbX{\mathbb{X}} \def\sX{\mathscr{X}} \def\fX{\mathfrak{X}} \def\cX{{\cal X}} \def\BX{{\bf X}} \def\Bx{{\bf x}}
+\def\dbY{\mathbb{Y}} \def\sY{\mathscr{Y}} \def\fY{\mathfrak{Y}} \def\cY{{\cal Y}} \def\BY{{\bf Y}} \def\By{{\bf y}}
+\def\dbZ{\mathbb{Z}} \def\sZ{\mathscr{Z}} \def\fZ{\mathfrak{Z}} \def\cZ{{\cal Z}} \def\BZ{{\bf Z}} \def\Bz{{\bf z}}
+\def\Om{\Omega}      \def\Lm{\Lambda}     \def\Th{\Theta}
+\def\whP{\widehat{P}}  \def\whL{\widehat{\L}}
+\def\wtP{\widetilde{P}}  \def\wtL{\widetilde{\L}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\ss{\smallskip}       \def\ua{\mathop{\uparrow}}         \def\lt{\left}
+\def\ms{\medskip}         \def\da{\mathop{\downarrow}}       \def\rt{\right}
+\def\bs{\bigskip}         \def\Ra{\mathop{\Rightarrow}}      \def\lan{\langle}
+\def\ds{\displaystyle}    \def\La{\mathop{\Leftarrow}}       \def\ran{\rangle}
+\def\ra{\rightarrow}      \def\la{\leftarrow}
+\def\lra{\longrightarrow} \def\lla{\longleftarrow}
+\def\no{\noindent}        \def\q{\quad}                      \def\llan{\left\langle}
+\def\ns{\noalign{\ss}}    \def\qq{\qquad}                    \def\rran{\right\rangle}
+\def\nm{\noalign{\ms}}    \def\hb{\hbox}                     \def\blan{\big\langle}
+\def\nb{\noalign{\bs}}    \def\ce{\centerline}               \def\bran{\big\rangle}
+\def\eq{\eqalign}         \def\rf{\eqref}                    \def\Blan{\Big\langle}
+\def\tc{\textcolor{red}}  \def\deq{\triangleq}               \def\Bran{\Big\rangle}
+\def\tb{\textcolor{blue}} \def\ae{\hbox{\rm a.e.}}           \def\({\Big (}
+\def\les{\leqslant}       \def\as{\hbox{\rm a.s.}}           \def\){\Big )}
+\def\ges{\geqslant}       \def\esssup{\mathop{\rm esssup}}   \def\[{\Big[}
+\def\cl{\overline}        \def\essinf{\mathop{\rm essinf}}   \def\]{\Big]}
+\def\h{\widehat}          \def\tr{\hbox{\rm tr$\,$}}         \def\cd{\cdot}
+\def\wt{\widetilde}       \def\var{\hbox{\rm var$\,$}}       \def\cds{\cdots}
+\def\ti{\tilde}           \def\cl{\overline}                 \def\hp{\hphantom}
+\def\nn{\nonumber}        \def\ts{\times}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\a{\alpha}        \def\G{\Gamma}   \def\g{\gamma}   \def\O{\Omega}   \def\o{\omega}
+\def\b{\beta}         \def\D{\Delta}   \def\d{\delta}   \def\F{\Phi}     \def\p{\phi}
+\def\z{\zeta}         \def\Th{\Theta}  \def\th{\theta}  \def\Si{\Sigma}  \def\si{\sigma}
+\def\e{\varepsilon}   \def\L{\Lambda}  \def\l{\lambda}  \def\m{\mu}      \def\n{\nu}
+\def\eps{\epsilon}    \def\t{\tau}     \def\f{\varphi}  \def\i{\infty}   \def\k{\kappa}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\bde{\begin{definition}\label}
+\def\ede{\end{definition}}
+\def\be{\begin{equation}}
+\def\bel{\begin{equation}\label}
+\def\ee{\end{equation}}
+\def\bt{\begin{theorem}\label}
+\def\et{\end{theorem}}
+\def\bc{\begin{corollary}\label}
+\def\ec{\end{corollary}}
+\def\bl{\begin{lemma}\label}
+\def\el{\end{lemma}}
+\def\bp{\begin{proposition}\label}
+\def\ep{\end{proposition}}
+\def\bas{\begin{assumption}\label}
+\def\eas{\end{assumption}}
+\def\br{\begin{remark}\label}
+\def\er{\end{remark}}
+\def\bex{\begin{example}\label}
+\def\ex{\end{example}}
+\def\ba{\begin{array}}
+\def\ea{\end{array}}
+\def\ed{\end{document}}
+%\def\pf{\begin{proof}}
+%\def\ef{\end{proof}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\ts{\times}
+\def\olb\
+\def\eps{\epsilon}
+\def\square#1{\vbox{\hrule\hbox{\vrule height#1%
+     \kern#1\vrule}\hrule}}
+\def\rectangle#1#2{\vbox{\hrule\hbox{\vrule height#1%
+     \kern#2\vrule}\hrule}}
+\def\qed{\hfill \vrule height7pt width3pt depth0pt}
+\def\dal{\square{6pt}}
+
+\def\redtext{\textcolor[rgb]{1.00,0.00,0.00}}
+\def\bluetext{\textcolor[rgb]{0.00,0.00,1.00}}
+
+\def\redtext{\textcolor{red}}
+\def\bluetext{\textcolor{blue}}
+
+% The next lines import blackboard bold the font \bb.
+
+\font\tenbb=msbm10 \font\sevenbb=msbm7 \font\fivebb=msbm5
+
+\newfam\bbfam
+\scriptscriptfont\bbfam=\fivebb \textfont\bbfam=\tenbb
+\scriptfont\bbfam=\sevenbb
+\def\bb{\fam\bbfam\tenbb}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newtheorem{theorem}{Theorem}[section]
+%\newtheorem{definition}[theorem]{Definition}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{remark}[theorem]{Remark}
+%\newtheorem{example}[theorem]{Example}
+%
+%\newtheorem{conjecture}[theorem]{Conjecture}
+%\newtheorem{assumption}[theorem]{Assumption}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                           定制幻灯片---重定义字体、字号命令                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\song}{\CJKfamily{song}}    % 宋体   (Windows自带simsun.ttf)
+\newcommand{\fs}{\CJKfamily{fs}}        % 仿宋体 (Windows自带simfs.ttf)
+\newcommand{\kai}{\CJKfamily{kai}}      % 楷体   (Windows自带simkai.ttf)
+\newcommand{\hei}{\CJKfamily{hei}}      % 黑体   (Windows自带simhei.ttf)
+\newcommand{\li}{\CJKfamily{li}}        % 隶书   (Windows自带simli.ttf)
+\newcommand{\you}{\CJKfamily{you}}      % 幼圆   (Windows自带simyou.ttf)
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     % 字号设置
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} % 字号设置
+\newcommand{\yichu}{\fontsize{32pt}{\baselineskip}\selectfont}      % 字号设置
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      % 字号设置
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      % 字号设置
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  % 字号设置
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  % 字号设置
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}      % 字号设置
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  % 字号设置
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    % 字号设置
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   % 字号设置
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  % 字号设置
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    % 字号设置
+
+\setbeamercovered{transparent}
+
+\begin{document}
+\begin{CJK*}{GBK}{kai}
+\CJKtilde
+%======================= 标题名称中文化 ============================%
+\newtheorem{dingyi}{\hei 定义~}[section]
+\newtheorem{dingli}{\hei 定理~}[section]
+\newtheorem{yinli}[dingli]{\hei 引理~}
+\newtheorem{tuilun}[dingli]{\hei 推论~}
+\newtheorem{mingti}[dingli]{\hei 命题~}
+
+\makeatletter
+%\renewcommand\theequation{\thesection.\arabic{equation}}
+%\@addtoreset{equation}{section}
+\makeatother
+\title[]{概率论与数理统计}
+\rm
+\author[]
+ { \emph{} \xiaosihao\hei\textcolor[rgb]{0.85,0.42,0.00}{温家强} \\
+   \vspace{3mm}
+    \small{理学院数学系\ M607\\
+%   \vspace{5mm}
+   wenjq@sustech.edu.cn\\
+Office Hour：周三15:00—18:00}\rule[0pt]{0pt}{5pt}\\
+   \vspace{2mm}
+%   Arxiv.org/abs/1906.10582.
+  %\large
+   \textcolor{blue}{\texttt{}}
+%   \vspace{5mm}\\
+%   2019 Workshop on Mathematical Finance and Financial Data Processing Conference, Qingdao,
+ }
+\date{ 2023年2月13日}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{引言}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+
+% 除掉以下命令的注解 "%" 后, 许多环境都会自动逐段显示
+\beamerdefaultoverlayspecification{<+->}
+
+
+%%%%% 在每个 section 前插入目录 ===============================================
+\AtBeginSection[] % Do nothing for \section*
+{
+  \begin{frame}<beamer> \frametitle{引言}
+  \tableofcontents[currentsection,hideallsubsections]%,currentsubsection]
+  \end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{什么是概率统计？}
+
+\rm
+{\large
+\begin{frame}
+ \frametitle{什么是概率统计？}
+
+$\bullet$ 必然现象中的确定性规律：\\
+  \ms
+$\triangleright$ $1+1=2$\\
+  \ms
+$\triangleright$ 自由落体运动公式 $h=\frac{1}{2}gt^2$\\
+\ms
+$\triangleright$ 太阳从东边升起\\
+
+\vspace{5mm}
+
+$\bullet$ 自然界和社会中存在着大量的随机事现象：\\
+  \ms
+$\triangleright$ 人的寿命\\
+  \ms
+$\triangleright$ 天气现象\\
+\ms
+$\triangleright$ 新冠疫情\\
+\ms
+$\triangleright$ 金融市场\\
+\ms
+$\triangleright$ 彩票市场\\
+\ms
+\end{frame}}
+
+
+{\large
+\begin{frame}
+ \frametitle{什么是概率统计？}
+
+$\bullet$ 随机现象虽然存在不确定性，但还是存在某些规律。\\
+  \ms
+$\triangleright$ 老年人的余寿一般来说比年轻人短\\
+  \ms
+$\triangleright$ 明天深圳的温度很大可能比上海的要高\\
+\ms
+$\triangleright$ 抛一枚均匀的硬币，出现正反面的可能性是一样的\\
+
+\vspace{5mm}
+
+$\bullet$ 统计规律\\
+\vspace{5mm}
+$\bullet$ 概率统计是各个学科中\tb{唯一}一门专门研究随机现象的规律性科学。\\
+\vspace{5mm}
+$\bullet$ 随机现象的广泛性决定了这门学科的重要性。\\
+\end{frame}}
+
+
+
+{\large
+\begin{frame}
+ \frametitle{什么是概率统计？}
+
+$\bullet$ 确切来说，概率论与数理统计是两个学科。\\
+  \vspace{5mm}
+$\triangleright$ \tb{概率论}是数学的一个分支，研究如何定量描述随机现象及其规律；\\
+  \vspace{5mm}
+$\triangleright$ \tb{数理统计}则以数据为唯一研究对象，包括数据的收集、整理、分析和建模，从而对随机现象的某些规律进行预测或决策。大数据时代的来临，更为统计的发展带来了极大的机遇和挑战。
+
+\end{frame}}
+
+
+
+%%%%% 在每个 section 前插入目录 ===============================================
+\AtBeginSection[] % Do nothing for \section*
+{
+  \begin{frame}<beamer> \frametitle{引言}
+  \tableofcontents[currentsection,hideallsubsections]%,currentsubsection]
+  \end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{如何学习概率统计？}
+
+\rm
+{\large
+\begin{frame}
+ \frametitle{如何学习概率统计？}
+
+$\bullet$ \tb{学思想}：概率统计特殊的研究对象包含了许多独特的思维方法和思想方法，特别是如何看待和处理随机规律，这是其他学科中没有的。例如，以比较各种事件出现的可能性的大小进行决策的思想。\\
+
+\vspace{5mm}
+
+$\bullet$
+\tb{学方法}：定量描述随机现象及其规律的方法，收集、整理、分析数据，从而建立统计模型的方法。\\
+
+\vspace{5mm}
+
+$\bullet$ \tb{学应用}。尽可能多地了解各种概念的背景、各种方法和模型的实际应用。不仅要学课程中提及的，也要自己收集、寻找各种实例。\\
+
+\vspace{5mm}
+
+$\bullet$ \tb{课前预习、课中认真听讲、课后多做练习。}\\
+\end{frame}}
+
+
+
+
+%%%%% 在每个 section 前插入目录 ===============================================
+\AtBeginSection[] % Do nothing for \section*
+{
+  \begin{frame}<beamer> \frametitle{引言}
+  \tableofcontents[currentsection,hideallsubsections]%,currentsubsection]
+  \end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{怎样才算是成功的学习课程？}
+
+\rm
+{\large
+\begin{frame}
+ \frametitle{怎样才算是成功的学习课程？}
+
+$\bullet$ 检验《概率论与数理统计》这门课程学的好坏，除了掌握教材内容，会做作业，考试成绩优良外，还应掌握下面两条标准：\\
+  \vspace{5mm}
+$\triangleright$ 是否对``\tb{随机}"有足够的认识\\
+  \vspace{5mm}
+$\triangleright$ 是否对``\tb{数据}"有兴趣、有直觉\\
+\end{frame}}
+
+
+
+
+
+\end{CJK*}
+\end{document}

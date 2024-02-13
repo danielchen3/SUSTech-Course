@@ -1,0 +1,102 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Tue Jan  2 23:02:48 2024
+| Host         : Daniel-Chen running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Piano_Controller_control_sets_placed.rpt
+| Design       : Piano_Controller
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    37 |
+| Unused register locations in slices containing registers |   119 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              98 |           62 |
+| No           | No                    | Yes                    |              21 |            6 |
+| No           | Yes                   | No                     |             152 |           46 |
+| Yes          | No                    | No                     |              24 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             642 |          169 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------------+---------------------------+----------------------------------+------------------+----------------+
+|                   Clock Signal                  |       Enable Signal       |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-------------------------------------------------+---------------------------+----------------------------------+------------------+----------------+
+|  autoplay/seg_in_reg[35]/G0                     |                           |                                  |                1 |              1 |
+|  autoplay/seg_in_reg[20]/G0                     |                           |                                  |                1 |              1 |
+|  study/song_reg[1]/G0                           |                           |                                  |                1 |              1 |
+|  autoplay/seg_in_reg[30]/G0                     |                           |                                  |                1 |              1 |
+|  autoplay/seg_in_reg[29]/G0                     |                           |                                  |                1 |              1 |
+|  study/user_reg[1]/G0                           |                           |                                  |                1 |              1 |
+|  changeflag0/flag_reg[1]                        |                           | autolight0/clkdiv_reg[0]_0       |                1 |              1 |
+|  study/user3_rank                               |                           | study/choose_user[0]             |                1 |              1 |
+|  study/song_reg[1]_i_1_n_1                      |                           | study/song_reg[0]_i_1_n_1        |                1 |              1 |
+|  autoplay/seg_in_reg[39]_i_1__0_n_1             |                           | autoplay/seg_in_reg[39]_i_2_n_1  |                1 |              2 |
+|  changeuser0/choose_user_reg[1]                 |                           |                                  |                1 |              2 |
+|  changemode0/mode_reg[0]                        |                           |                                  |                2 |              2 |
+|  switch_tone0/FSM_sequential_switch_tone_reg[1] |                           |                                  |                1 |              2 |
+|  autoplay/lib/notes_reg[2]_i_2__0_n_1           |                           | start_pause_IBUF                 |                2 |              3 |
+|  changeflag0/flag_reg[1]                        |                           |                                  |                2 |              3 |
+|  study/lib/notes_reg[2]_i_2_n_1                 |                           | start_pause_IBUF                 |                1 |              3 |
+|  autoplay/frediv/CLK                            |                           | autoplay/cnt_flag0[7]_i_1_n_1    |                2 |              8 |
+|  autoplay/frediv/CLK                            |                           | autoplay/cnt_flag1[7]_i_1__0_n_1 |                3 |              8 |
+|  autoplay/frediv/CLK                            |                           | autoplay/cnt_flag2[7]_i_1__0_n_1 |                3 |              8 |
+|  autoplay/cnt_reg[7]_i_2_n_1                    |                           |                                  |                4 |              8 |
+|  save_userd/CLK                                 | study/user3_rank          |                                  |                3 |              8 |
+|  save_userd/CLK                                 | study/user_reg[1]_i_2_n_1 |                                  |                3 |              8 |
+|  save_userd/CLK                                 | study/user_reg[1]_i_3_n_1 |                                  |                3 |              8 |
+|  study/rank_reg[7]_i_2_n_1                      |                           |                                  |                4 |              8 |
+|  clk_IBUF_BUFG                                  |                           |                                  |               14 |             15 |
+|  study/grades_reg[7]_i_2_n_1                    |                           |                                  |               12 |             16 |
+|  clk_out                                        | study/cnt_flag1           | study/cnt_flag1[7]_i_1_n_1       |                6 |             16 |
+|  clk_out                                        | study/cnt_flag0           | study/cnt_flag0[7]_i_1__0_n_1    |                5 |             16 |
+|  clk_out                                        | study/cnt_flag2           | study/cnt_flag2[7]_i_1_n_1       |                8 |             16 |
+|  clk_IBUF_BUFG                                  |                           | autolight0/clkdiv_reg[0]_0       |                9 |             26 |
+|  clk_IBUF_BUFG                                  |                           | buzzer/counter[0]_i_1_n_1        |                8 |             32 |
+|  n_0_8568_BUFG                                  |                           |                                  |               16 |             36 |
+|  clk_IBUF_BUFG                                  |                           | autoplay/frediv/clk_out          |               10 |             40 |
+|  clk_IBUF_BUFG                                  |                           | study/fre2/cnt[40]_i_1_n_1       |               10 |             40 |
+|  clk_out                                        | study/cnt_fault0          | study/cnt_fault00                |               50 |            198 |
+|  clk_out                                        | study/cnt_fault1          | study/cnt_fault10                |               50 |            198 |
+|  clk_out                                        | study/cnt_fault2          | study/cnt_fault20                |               50 |            198 |
++-------------------------------------------------+---------------------------+----------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     9 |
+| 2      |                     4 |
+| 3      |                     3 |
+| 8      |                     8 |
+| 15     |                     1 |
+| 16+    |                    12 |
++--------+-----------------------+
+
+
