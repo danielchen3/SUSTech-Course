@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/ABmain/ABmain.iml" filepath="$PROJECT_DIR$/CS-2023spring/ABmain/ABmain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/CS-2023spring.iml" filepath="$PROJECT_DIR$/CS-2023spring/CS-2023spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/CS109/CS109.iml" filepath="$PROJECT_DIR$/CS-2023spring/CS109/CS109.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/IdeaDemo/IdeaDemo.iml" filepath="$PROJECT_DIR$/CS-2023spring/IdeaDemo/IdeaDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/CS109/Week11/Week11.iml" filepath="$PROJECT_DIR$/CS-2023spring/CS109/Week11/Week11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/chapter4t5/chapter4t5.iml" filepath="$PROJECT_DIR$/CS-2023spring/chapter4t5/chapter4t5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/exercise/exercise.iml" filepath="$PROJECT_DIR$/CS-2023spring/exercise/exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java a.iml" filepath="$PROJECT_DIR$/.idea/java a.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/CS109/leecode/leecode.iml" filepath="$PROJECT_DIR$/CS-2023spring/CS109/leecode/leecode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/teacher/teacher.iml" filepath="$PROJECT_DIR$/CS-2023spring/teacher/teacher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/test5_10/test5_10.iml" filepath="$PROJECT_DIR$/CS-2023spring/test5_10/test5_10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/test8_8/test8_8.iml" filepath="$PROJECT_DIR$/CS-2023spring/test8_8/test8_8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/untitled/untitled.iml" filepath="$PROJECT_DIR$/CS-2023spring/untitled/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/CS109/week10/week10.iml" filepath="$PROJECT_DIR$/CS-2023spring/CS109/week10/week10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/CS109/week13/week13.iml" filepath="$PROJECT_DIR$/CS-2023spring/CS109/week13/week13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project/斗兽棋/week13/week131.iml" filepath="$PROJECT_DIR$/project/斗兽棋/week13/week131.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/ABmain/week3/week3.iml" filepath="$PROJECT_DIR$/CS-2023spring/ABmain/week3/week3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/CS109/week4/week4.iml" filepath="$PROJECT_DIR$/CS-2023spring/CS109/week4/week4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/CS109/week6/week6.iml" filepath="$PROJECT_DIR$/CS-2023spring/CS109/week6/week6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/CS109/week7/week7.iml" filepath="$PROJECT_DIR$/CS-2023spring/CS109/week7/week7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CS-2023spring/CS109/week8/week8.iml" filepath="$PROJECT_DIR$/CS-2023spring/CS109/week8/week8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project/斗兽棋/斗兽棋.iml" filepath="$PROJECT_DIR$/project/斗兽棋/斗兽棋.iml" />
+    </modules>
+  </component>
+</project>

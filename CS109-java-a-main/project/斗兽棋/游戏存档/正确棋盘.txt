@@ -1,0 +1,15 @@
+b r (6,6) to (5,6) 
+r e (2,6) to (3,6) 
+b r (5,6) to (4,6) 
+r w (2,4) to (2,5) 
+b r (4,6) to (3,6) eat e
+Current player: red
+L*****t
+*d***c*
+r*l**w*
+******r
+*******
+*******
+e*w*l**
+*c***d*
+t*****L
