@@ -1,9 +1,7 @@
-# 关于本仓库
+# Abour this repoitory
 
-南方科技大学2022级计算机科学与工程系本科生，本仓库仅作为记录以及课程资料的提供。
+This repository only contains course materials and for projects in CSE please refer to [SUSTech CSE projects](https://github.com/danielchen3/SUSTech-Projects)
 
-本仓库代码部分仅作为参考，出现抄袭后果自负。
 
-欢迎交流！
 
-邮箱`12210731@mail.sustech.edu.cn`
+Email `chenchangxin2022@mail.sustech.edu.cn`
