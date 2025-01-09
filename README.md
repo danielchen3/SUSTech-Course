@@ -1,4 +1,4 @@
-# Abour this repoitory
+# About this repoitory
 
 This repository only contains course materials and for projects in CSE please refer to [SUSTech CSE projects](https://github.com/danielchen3/SUSTech-Projects)
 
